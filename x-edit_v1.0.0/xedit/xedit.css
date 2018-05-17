@@ -1,0 +1,312 @@
+            /*有些样式需要兼容火狐和ie浏览器*/
+            .xedit_component{
+                width: 100%;
+                height:100%;
+            }
+            .xedit_component .none{
+                display:none!important;
+            }
+            .xedit_component button{
+                outline:0;
+            }
+            .xedit_component .edit_header{
+                position: relative;
+                width: 100%;
+                border-bottom: 1px solid #e1e1e1;
+                box-shadow: 2px 2px 5px #d3d6da;
+                background-color: #fafafa;
+                z-index: 1;
+            }
+            .xedit_component .edit_toolbar{
+                width:100%;
+                padding: 5px;
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+            }
+            .xedit_component .editableText,.xedit_component .xedit_textarea{
+                width:100%;
+                /*height:100%;*/
+                font-size: 12px;
+                border: 1px solid #ccc;
+                border-top:none;
+                font-family: sans-serif;
+                word-wrap: break-word;
+                overflow: auto;
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box; 
+            }
+            .xedit_component .editableText:focus,.xedit_component .xedit_textarea:focus {
+                outline: none;
+            }
+            .xedit_component .btn{
+                position: relative;
+                display: inline-block;
+                vertical-align: top;
+                width: auto;
+                margin: 0 1px;
+                padding:1px;
+                border: 0;
+                background: 0 0;
+                z-index: 1;
+                font-size: 0;
+            }
+            .xedit_component .btn_active{
+                background-color: #d5e1f2;
+                padding: 0;
+                border: 1px solid #a3bde3;
+            }
+            .xedit_component .icon{
+                display: inline-block;
+                width: 20px;
+                height: 22px;
+                padding: 1px;
+                /*border:1px solid transparent;*/
+                margin: 0 1px;
+                background-repeat: no-repeat;
+                background-image: url(./images/icons.png);
+                box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                -webkit-box-sizing:border-box;
+            }
+            .xedit_component .icon_dropdown{
+                width:10px;
+            }
+            .xedit_component .icon_source{
+                background-position: -260px -0px;
+            } 
+            .xedit_component .btn_separator{
+                width: 2px;
+                height: 20px;
+                padding: 1px 2px;
+                background: url(./images/icons.png) -179px 1px;
+                display: inline-block;
+                vertical-align: top;
+                border: 0;
+            }
+            /*undo*/
+            .xedit_component .icon_undo{
+                background-position: -160px 0;
+            }
+            .xedit_component .icon_redo{
+                background-position: -100px 0;
+            }
+            .xedit_component .icon_bold{
+                background-position: 0 0;
+            }
+            .xedit_component .icon_italic{
+                background-position: -60px 0;
+            }
+            .xedit_component .icon_underline{
+                background-position: -140px 0;
+            }
+            .xedit_component .icon_strikethrough{
+                background-position: -120px 0;
+            }
+            .xedit_component .icon_color{
+                background-position: -720px 0;
+            }
+            .xedit_component .icon_dropdown{
+                background-position: -741px 0;
+            }
+            .xedit_component .color_dropdown,.xedit_component .bg_color_dropdown{
+                top: 20px;
+                left: 0px;
+                position: absolute;
+                border: 1px solid #bfbfbf;
+                background-color: #fff;  
+                z-index: 1000;
+            }
+            .xedit_component .color_dropdown_body{
+                margin: 10px;
+                font-size: 12px;
+            }
+            .xedit_component .color_dropdown_body table{
+                border-collapse: collapse;
+                border-spacing: 2px;
+            }
+            .xedit_component .color_dropdown_body table td {
+                padding: 0 2px;
+            }
+            .xedit_component .colorpicker_firstrow {
+                height: 30px;
+            }
+            .xedit_component .edit_colorcell{
+                display: block;
+                text-decoration: none;
+                color: #000;
+                width: 14px;
+                height: 14px;
+                margin: 0;
+                cursor: pointer;
+            }
+            .xedit_component .icon_bg_color{
+                background-position: -760px 0;
+            }
+            .xedit_component .icon_ordered_list{
+                background-position: -80px 0;
+            }
+            .xedit_component .icon_unordered_list{
+                background-position: -20px 0;
+            }
+            .xedit_component .icon_justify_left{
+                background-position: -460px 0;
+            }
+            .xedit_component .icon_justify_center{
+                background-position: -420px 0;
+            }
+            .xedit_component .icon_justify_right{
+                background-position: -480px 0;
+            }
+            .xedit_component .edit_combobox{
+                border: 1px solid #CCC;
+                padding: 0;
+                margin: 0 2px;
+                line-height: 20px;
+                z-index: 50;
+            }
+            .xedit_component .btn_fontfamily{
+                z-index: 50;
+            }
+            .xedit_component .btn_fontsize{
+                z-index: 40;
+            }
+            .xedit_component .btn_color{
+                z-index: 30;
+            }
+            .xedit_component .btn_bgcolor{
+                z-index: 20;
+            }
+            .xedit_component .btn_paragraph{
+                z-index: 10;
+            }
+            
+            .xedit_component .btn_label{
+                display: inline-block;
+                vertical-align: top;
+                width: 60px;
+                height: 20px;
+                line-height: 20px;
+                padding: 2px;
+                margin: 0;
+                font-size: 12px;
+                text-align: center;
+                cursor: default;
+            }
+            .xedit_component .edit_cart{
+                
+                height: 20px;
+                width: 12px;
+                border: 0;
+                background: url(./images/icons.png) -741px 0;
+
+            }
+            .xedit_component .combobox_menu{
+                position: absolute;
+                top: 100%;
+                left: -1px;
+                list-style: none;
+                text-decoration: none;
+                margin: 0;
+                padding: 5px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                font-size: 12px;
+                box-shadow: 2px 2px 5px #d3d6da;
+                min-width: 160px;
+                z-index: 1000;
+            }
+
+            .xedit_component .edit_comb_item{
+                display: block;
+                border: 1px solid #fff;
+                text-align: left;
+                padding-left:24px;
+            }
+            .xedit_component .edit_comb_item:hover{
+                background-color: #d5e1f2;
+                padding: 0;
+                padding-left:24px;
+                border: 1px solid #a3bde3;
+
+            }
+            .xedit_component .fontfamily_value{
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+                -o-text-overflow:ellipsis;
+            }
+            .xedit_component .icon_link{
+                background-position: -500px 0;
+            }
+            .xedit_component .icon_unlink{
+                background-position: -640px 0;
+            }
+            .xedit_component .icon_table{
+                background-position: -660px 0; 
+            }
+            /*弹出框*/
+            .xedit_component .edit_mask{
+                position:fixed;
+                top:0px;
+                bottom:0px;
+                left:0px;
+                right:0px;
+                z-index: 2000;
+                background:rgba(170,170,170,.3); 
+            }
+            .xedit_component .edit_mask_table{
+                width:500px;
+                height:300px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                -ms-transform:translate(-50%,-50%);
+                background:#fff;
+                text-align:center;
+            }
+            .xedit_component .mask_header{
+                padding-top:20px;
+                text-align: center;
+            }
+            .xedit_component table.mask_table{
+                padding:0 20px 20px 20px;
+            }
+            .xedit_component table.mask_table input{
+                width:40px;
+            }
+            .xedit_component table.mask_table tr{
+               height: 40px;
+            }
+            .xedit_component table.edit_mask_img td{
+              width:50%;
+            }
+            .xedit_component table.mask_table td{
+               width: 33%;
+            }
+            .xedit_component .icon_img{
+                background-position: -380px 0;
+            }
+            .xedit_component .edit_mask_img{
+                width:400px;
+                height:250px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+                -ms-transform:translate(-50%,-50%);
+                background:#fff;
+                text-align:center;
+            }
+            .xedit_component table.mask_table_img{
+                padding:20px 20px 20px 20px;
+            }
+            .xedit_component table.mask_table_img td{
+                padding-bottom: 20px;
+            }
+            .xedit_component button.btn_mask{
+                padding:3px 10px;
+                margin:0px 5px;
+            }

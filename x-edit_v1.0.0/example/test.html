@@ -1,0 +1,44 @@
+<!DOCTYPE html5> 
+<html> 
+    <head> 
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"> 
+        <title>富文本编辑器</title> 
+        <link rel="stylesheet" type="text/css" href="../xedit/xedit.css">
+        <style type="text/css">
+            #test,#test2{
+               width:470px;
+               height:300px;
+               margin:auto;
+            }
+        </style>
+    </head> 
+    <body>
+        <div id="test"></div>
+         <div id="test2"></div>
+    </body>
+    <script type="text/javascript" src="../xedit/xedit.js"></script>
+    <script type="text/javascript">
+    //文本编辑器配置项
+        var xeditConfig={
+            currentDom:document.querySelector('#test'),
+            //defaultHTML:"<div><b>1234576767676767676767676767676767676</b></div>",
+            getHTMLBtn:true,
+            unDoBtn:true,
+            reDoBtn:true,
+            tableBtn:true,
+            imageBtn:true,
+            getHTMLFn:function(content){console.log(content)},
+        };
+        var xedit=new XEditor(xeditConfig);
+        var xeditConfig2={
+            currentDom:document.querySelector('#test2'),
+            getHTMLBtn:true,
+            getHTMLFn:function(content){console.log(content)},
+            unDoBtn:false,
+            reDoBtn:false,
+            tableBtn:true,
+            imageBtn:true,
+        };
+        //var xedit2=new XEditor(xeditConfig2);
+    </script>
+    </html>
